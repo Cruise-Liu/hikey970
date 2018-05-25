@@ -7,3 +7,4 @@
 - Bin:
 	- HiAI DDK.zip: https://pan.baidu.com/s/1t3pvByq2U-tQKO1Z5fftmA
 	- DevEco IDE.zip: https://pan.baidu.com/s/1IQn2tEvVA1AJTsX-4fMzSQ
+	- hikey970_fix_hdmi_storage.rar(2018/05/18): https://pan.baidu.com/s/19cTv_MoIgOKgJNZJO01t4Q
