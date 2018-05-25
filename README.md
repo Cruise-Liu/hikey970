@@ -8,3 +8,5 @@
 	- HiAI DDK.zip: https://pan.baidu.com/s/1t3pvByq2U-tQKO1Z5fftmA
 	- DevEco IDE.zip: https://pan.baidu.com/s/1IQn2tEvVA1AJTsX-4fMzSQ
 	- hikey970_fix_hdmi_storage.rar(2018/05/18): https://pan.baidu.com/s/19cTv_MoIgOKgJNZJO01t4Q
+- Hardware:
+	- 开发板购买地址：https://item.taobao.com/item.htm?spm=a230r.1.14.16.2c705c98FLroqF&id=566806699719&ns=1&abbucket=17#detail
