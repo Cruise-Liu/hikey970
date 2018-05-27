@@ -10,6 +10,8 @@
 	- hikey970_fix_hdmi_storage.rar(2018/05/18): https://pan.baidu.com/s/19cTv_MoIgOKgJNZJO01t4Q
 - Hardware:
 	- 开发板购买地址：https://item.taobao.com/item.htm?spm=a230r.1.14.16.2c705c98FLroqF&id=566806699719&ns=1&abbucket=17#detail
+	- 散热风扇的安装：关键在于把正负极的插针分开，以便安装。否则由于卖家送的插针两个引脚的间距与板子的插口不匹配，导致无法安装。
+	- 经过实际测试，散热风扇降温效果明显。
 - Development
 	- Android Studio: https://dl.google.com/dl/android/studio/install/3.1.2.0/android-studio-ide-173.4720617-windows.exe
 	- SDK Manager:https://dl.google.com/android/installer_r24.4.1-windows.exe
