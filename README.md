@@ -10,3 +10,15 @@
 	- hikey970_fix_hdmi_storage.rar(2018/05/18): https://pan.baidu.com/s/19cTv_MoIgOKgJNZJO01t4Q
 - Hardware:
 	- 开发板购买地址：https://item.taobao.com/item.htm?spm=a230r.1.14.16.2c705c98FLroqF&id=566806699719&ns=1&abbucket=17#detail
+- Development
+	- Android Studio: https://dl.google.com/dl/android/studio/install/3.1.2.0/android-studio-ide-173.4720617-windows.exe
+	- SDK Manager:https://dl.google.com/android/installer_r24.4.1-windows.exe
+	- JDK 8 x86-64
+	- Steps:
+		- a. 安装JDK、SDK Manger（安装目录不能包含空格）、Android Studio
+		- b. 启动Android Studio后，在SDK Manager的位置，设置为之前安装的目录
+		- c. 打开SDK Manager，下载Android SDK 26.0.2，不用设置代理，可直接下载
+		- d. 新建一个hellow world项目。在编译构建时，下载gradle 4.4会耗时较长，只是慢，没有被墙
+	- 注意事项：970开发板打开调制模式后，usb口的键盘和鼠标将无法使用，此时可使用蓝牙键盘鼠标代替。
+- 遗留问题
+  - 970开发板如何使用摄像头？双目景深摄像头如何使用？
