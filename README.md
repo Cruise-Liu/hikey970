@@ -13,9 +13,10 @@
 	- 散热风扇的安装：关键在于把正负极的插针分开，以便安装。否则由于卖家送的插针两个引脚的间距与板子的插口不匹配，导致无法安装。
 	- 经过实际测试，散热风扇降温效果明显。
 - Development
+	- JDK 8 x86-64
 	- Android Studio: https://dl.google.com/dl/android/studio/install/3.1.2.0/android-studio-ide-173.4720617-windows.exe
 	- SDK Manager:https://dl.google.com/android/installer_r24.4.1-windows.exe
-	- JDK 8 x86-64
+	- gradle-4.1-all.zip:https://pan.baidu.com/s/19iIQuC6HzZbDtad7Xt1edw
 	- "Hello World" Project Steps:
 		- a. 安装JDK、SDK Manger（安装目录不能包含空格）、Android Studio
 		- b. 启动Android Studio后，在SDK Manager的位置，设置为之前安装的目录
