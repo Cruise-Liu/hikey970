@@ -26,6 +26,7 @@
 		- a. 导入工程"Demo_Soure_Code"
 		- b. 按"05 gradle-4.1-all.zip离线包下载 极速 android studio2.3 3.0编译必备 - zjgwh - 博客园",快速下载gradle-4.1-all.zip
 		- c. 如图"06 hikey970 npu.png"所示，注释掉三行语句。因为无法获取到property，所以直接跳过即可
+			![注释的语句](/06%20hikey970%20npu.png)
 		- d. build运行到970开发板上
 - 遗留问题
   - 970开发板如何使用摄像头？双目景深摄像头如何使用？
