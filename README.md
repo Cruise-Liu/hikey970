@@ -4,10 +4,12 @@
 	- 02 华为HiAI DDK使用手册.pdf
 	- 03 华为HiAI DDK集成手册.docx
 	- 04 DevEco IDE使用指南.docx
+	- 07 Hikey970编译.pdf
 - Bin:
 	- HiAI DDK.zip: https://pan.baidu.com/s/1t3pvByq2U-tQKO1Z5fftmA
 	- DevEco IDE.zip: https://pan.baidu.com/s/1IQn2tEvVA1AJTsX-4fMzSQ
 	- hikey970_fix_hdmi_storage.rar(2018/05/18): https://pan.baidu.com/s/19cTv_MoIgOKgJNZJO01t4Q
+	- gcc-linaro-7.1.1-2017.08-x86_64_aarch64-linux-gnu.tar: https://pan.baidu.com/s/1OUmJMZL4UjnLpWBi5PrqKQ
 - Hardware:
 	- 开发板购买地址：https://item.taobao.com/item.htm?spm=a230r.1.14.16.2c705c98FLroqF&id=566806699719&ns=1&abbucket=17#detail
 	- 散热风扇的安装：关键在于把正负极的插针分开，以便安装。否则由于卖家送的插针两个引脚的间距与板子的插口不匹配，导致无法安装。
@@ -29,5 +31,12 @@
 		- c. 如图"06 hikey970 npu.png"所示，注释掉三行语句。因为无法获取到property，所以直接跳过即可
 			![注释的语句](/06%20hikey970%20npu.png)
 		- d. build运行到970开发板上
+	- Hikey970源码编译注意事项：(根据07 Hikey970编译.pdf)
+		- a. l-loader下的hikey970.mk中python命令需要用2.7版本
+		- b. 编译BootLoader时出现fatal error: openssl/sha.h: No such file or directory错误：https://blog.csdn.net/xxxxxx91116/article/details/7927520(见08档)
+		- c. python虚拟环境:
+			- 生成虚拟环境：virtualenv -p /usr/bin/python2 py2env
+			- 激活虚拟环境：source py2env/bin/activate
+		- d. aosp下载：采用清华的源(https://mirrors.tuna.tsinghua.edu.cn/help/AOSP/);repo下载(https://mirrors.tuna.tsinghua.edu.cn/help/git-repo/).
 - 遗留问题
   - 970开发板如何使用摄像头？双目景深摄像头如何使用？
