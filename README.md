@@ -38,5 +38,28 @@
 			- 生成虚拟环境：virtualenv -p /usr/bin/python2 py2env
 			- 激活虚拟环境：source py2env/bin/activate
 		- d. aosp下载：采用清华的源(https://mirrors.tuna.tsinghua.edu.cn/help/AOSP/);repo下载(https://mirrors.tuna.tsinghua.edu.cn/help/git-repo/).
+    - Hikey970源码编译步骤: 
+	    - sudo apt-get install -y git flex bison gperf build-essential libncurses5-dev:i386 
+		- sudo apt-get install libx11-dev:i386 libreadline6-dev:i386 libgl1-mesa-dev g++-multilib 
+		- sudo apt-get install tofrodos python-markdown libxml2-utils xsltproc zlib1g-dev:i386 
+		- sudo apt-get install dpkg-dev libsdl1.2-dev libesd0-dev
+		- sudo apt-get install git-core gnupg flex bison gperf build-essential  
+		- sudo apt-get install zip curl zlib1g-dev gcc-multilib g++-multilib 
+		- sudo apt-get install libc6-dev-i386 
+		- sudo apt-get install lib32ncurses5-dev x11proto-core-dev libx11-dev 
+		- sudo apt-get install lib32z-dev ccache libssl-dev
+		- sudo apt-get install libgl1-mesa-dev libxml2-utils xsltproc unzip m4
+		- sudo apt-get install selinux-utils
+		- sudo apt-get install bc
+		- init.common.rc line83注释 #关闭selinux
+		- source ~/hikey970/bin/py2env/bin/activate #目的是使用python2.x
+		- repo init -u https://aosp.tuna.tsinghua.edu.cn/platform/manifest -b master
+		- git clone https://github.com/96boards-hikey/android-manifest.git -b hikey970_v1.0 .repo/local_manifests
+		- repo sync 
+		- source ./build/envsetup.sh
+		- lunch hikey970-userdebug
+		- make  -j32
+		- 编译成功，编译大约耗时3.5h
+		  ![注释的语句](/09%20编译成功截图.png)
 - 遗留问题
   - 970开发板如何使用摄像头？双目景深摄像头如何使用？
