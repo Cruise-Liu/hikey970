@@ -63,3 +63,9 @@
 		  ![注释的语句](/09%20编译成功截图.png)
 - 遗留问题
   - 970开发板如何使用摄像头？双目景深摄像头如何使用？
+- 小技巧
+  - 解决wifi connected, no internet: 指向小米的服务器
+	- adb shell settings put global captive_portal_use_https 0
+	- adb shell settings put global captive_portal_http_url http://connect.rom.miui.com/generate_204
+  - 解决时钟同步,将ntp服务器指向阿里服务器
+	- adb shell settings put global ntp_server  ntp5.aliyun.com
