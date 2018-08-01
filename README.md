@@ -69,3 +69,10 @@
 	- adb shell settings put global captive_portal_http_url http://connect.rom.miui.com/generate_204
   - 解决时钟同步,将ntp服务器指向阿里服务器
 	- adb shell settings put global ntp_server  ntp5.aliyun.com
+  - termux
+  	- pkg install git
+	- pkg install gdb
+	- pkg install strace
+	- pkg install clang
+	- pkg install vim
+	- apt-get install python python-dev
