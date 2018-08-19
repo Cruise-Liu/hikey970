@@ -38,15 +38,15 @@
 			- 生成虚拟环境：virtualenv -p /usr/bin/python2 py2env
 			- 激活虚拟环境：source py2env/bin/activate
 		- d. aosp下载：采用清华的源(https://mirrors.tuna.tsinghua.edu.cn/help/AOSP/);repo下载(https://mirrors.tuna.tsinghua.edu.cn/help/git-repo/).
-    - Hikey970源码编译步骤: 
-	    - sudo apt-get install -y git flex bison gperf build-essential libncurses5-dev:i386 
-		- sudo apt-get install libx11-dev:i386 libreadline6-dev:i386 libgl1-mesa-dev g++-multilib 
-		- sudo apt-get install tofrodos python-markdown libxml2-utils xsltproc zlib1g-dev:i386 
+    - Hikey970源码编译步骤:
+	    - sudo apt-get install -y git flex bison gperf build-essential libncurses5-dev:i386
+		- sudo apt-get install libx11-dev:i386 libreadline6-dev:i386 libgl1-mesa-dev g++-multilib
+		- sudo apt-get install tofrodos python-markdown libxml2-utils xsltproc zlib1g-dev:i386
 		- sudo apt-get install dpkg-dev libsdl1.2-dev libesd0-dev
 		- sudo apt-get install git-core gnupg flex bison gperf build-essential  
-		- sudo apt-get install zip curl zlib1g-dev gcc-multilib g++-multilib 
-		- sudo apt-get install libc6-dev-i386 
-		- sudo apt-get install lib32ncurses5-dev x11proto-core-dev libx11-dev 
+		- sudo apt-get install zip curl zlib1g-dev gcc-multilib g++-multilib
+		- sudo apt-get install libc6-dev-i386
+		- sudo apt-get install lib32ncurses5-dev x11proto-core-dev libx11-dev
 		- sudo apt-get install lib32z-dev ccache libssl-dev
 		- sudo apt-get install libgl1-mesa-dev libxml2-utils xsltproc unzip m4
 		- sudo apt-get install selinux-utils
@@ -55,7 +55,7 @@
 		- source ~/hikey970/bin/py2env/bin/activate #目的是使用python2.x
 		- repo init -u https://aosp.tuna.tsinghua.edu.cn/platform/manifest -b master
 		- git clone https://github.com/96boards-hikey/android-manifest.git -b hikey970_v1.0 .repo/local_manifests
-		- repo sync 
+		- repo sync
 		- source ./build/envsetup.sh
 		- lunch hikey970-userdebug
 		- make  -j32
@@ -70,9 +70,14 @@
   - 解决时钟同步,将ntp服务器指向阿里服务器
 	- adb shell settings put global ntp_server  ntp5.aliyun.com
   - Android Termux
-  	- pkg install git
-	- pkg install gdb
-	- pkg install strace
-	- pkg install clang
-	- pkg install vim
-	- apt install python python-dev
+		- pkg install git
+		- pkg install gdb
+		- pkg install strace
+		- pkg install clang
+		- pkg install vim
+		- apt install python python-dev
+	- Hikey970访问coursere吴恩达教程
+		- adb root
+		- adb pull /system/ect/hosts hosts.bak
+		- adb push hosts /system/etc/hosts
+		- Coursera视频无法观看的三种不同解决方法（亲测有效）:https://blog.csdn.net/qq_39521554/article/details/79039548
