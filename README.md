@@ -70,14 +70,14 @@
   - 解决时钟同步,将ntp服务器指向阿里服务器
 	- adb shell settings put global ntp_server  ntp5.aliyun.com
   - Android Termux
-		- pkg install git
-		- pkg install gdb
-		- pkg install strace
-		- pkg install clang
-		- pkg install vim
-		- apt install python python-dev
+    - pkg install git
+    - pkg install gdb
+    - pkg install strace
+    - pkg install clang
+    - pkg install vim
+    - apt install python python-dev
   - Hikey970访问coursere吴恩达教程
-		- adb root
-		- adb pull /system/ect/hosts hosts.bak
-		- adb push hosts /system/etc/hosts
-		- Coursera视频无法观看的三种不同解决方法（亲测有效）:https://blog.csdn.net/qq_39521554/article/details/79039548
+    - adb root
+    - adb pull /system/ect/hosts hosts.bak
+    - adb push hosts /system/etc/hosts
+    - Coursera视频无法观看的三种不同解决方法（亲测有效）:https://blog.csdn.net/qq_39521554/article/details/79039548
