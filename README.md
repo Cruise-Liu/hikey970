@@ -76,7 +76,7 @@
 		- pkg install clang
 		- pkg install vim
 		- apt install python python-dev
-	- Hikey970访问coursere吴恩达教程
+  - Hikey970访问coursere吴恩达教程
 		- adb root
 		- adb pull /system/ect/hosts hosts.bak
 		- adb push hosts /system/etc/hosts
